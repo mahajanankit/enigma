@@ -1,0 +1,6 @@
+.level {
+    display: none;
+}
+.level.active {
+    display: block;
+}

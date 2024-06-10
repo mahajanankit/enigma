@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Java in One Day</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Learn Java in One Day</h1>
+        <div id="level-1" class="level active mt-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Level 1: Variables</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">In Java, a variable is a container that holds data. To declare a variable, you use the following syntax:</p>
+                    <pre class="bg-light p-2">int myNumber = 5;</pre>
+                    <p class="card-text">Try creating a variable named <code>myVariable</code> and set it to the value <code>10</code>.</p>
+                    <textarea id="code-input-1" class="form-control mb-3" rows="5"></textarea>
+                    <button class="btn btn-primary" onclick="checkLevel1()">Submit</button>
+                    <div id="feedback-1" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+        <div id="level-2" class="level mt-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Level 2: If-Else Statements</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">An if-else statement allows you to execute code based on a condition. Here is an example:</p>
+                    <pre class="bg-light p-2">if (myNumber > 0) {
+    System.out.println("Positive number");
+} else {
+    System.out.println("Negative number");
+}</pre>
+                    <p class="card-text">Try creating an if-else statement that checks if <code>myVariable</code> is greater than 5 and prints "Greater" if true, otherwise prints "Smaller or Equal".</p>
+                    <textarea id="code-input-2" class="form-control mb-3" rows="5"></textarea>
+                    <button class="btn btn-primary" onclick="checkLevel2()">Submit</button>
+                    <div id="feedback-2" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+name: enigma
+version: '3.7'
+services:
+  env:
+    image: image_name
+    stdin_open: true
+    tty: true
+    entrypoint: ["opt/applications/enigma/docker/entrypoint.sh"]
+    command: ["bash"]
+    ports:
+      - "8080:8080"
+    working_dir: /opt/applications/enigma
+    volumes:
+      - ..:/opt/applications
+      - ~/.ssh:/root/.ssh:delegated

@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir firebase-admin
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run your application
-CMD ["python", "app.py"]
+CMD ["python", "runner.py"]
